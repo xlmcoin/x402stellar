@@ -1,0 +1,52 @@
+# ===================================================
+# x402 — AI Agent Payments
+# Stellar TOML Configuration
+# ===================================================
+
+NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
+
+ACCOUNTS=[
+  "GD6QKNCVIVYG7IWY2Q7JLDOCT5S73KOH3NDV4YMQBFDMH7BRXKB6BOSS"
+]
+
+VERSION="2.0.0"
+
+# ===================================================
+# DOCUMENTATION
+# ===================================================
+
+[DOCUMENTATION]
+ORG_NAME="x402 Foundation"
+ORG_DBA="x402"
+ORG_URL="https://www.x402.org"
+ORG_LOGO="https://www.x402.org/images/x402_vector.svg"
+ORG_DESCRIPTION="x402 is the open payment standard that enables services to charge for access to their APIs and content directly over HTTP. Built around the HTTP 402 Payment Required status code, it allows clients to programmatically pay for resources without accounts, sessions, or credential management."
+ORG_GITHUB="https://github.com/x402-foundation/x402"
+ORG_LICENSE_TYPE="Apache-2.0"
+ORG_LICENSE_URL="https://github.com/x402-foundation/x402/blob/main/LICENSE"
+
+# ===================================================
+# POINT OF CONTACT
+# ===================================================
+
+[[PRINCIPALS]]
+name="x402 Foundation"
+github="x402-foundation"
+
+# ===================================================
+# CURRENCIES
+# ===================================================
+
+[[CURRENCIES]]
+code="x402"
+issuer="GD6QKNCVIVYG7IWY2Q7JLDOCT5S73KOH3NDV4YMQBFDMH7BRXKB6BOSS"
+display_decimals=7
+name="AI agent payments"
+desc="x402 is the utility token for the x402 open payment protocol. It enables AI agents and programmatic clients to pay for API access and content directly over HTTP using the HTTP 402 Payment Required status code — with no accounts, sessions, or credential management required. Apache-2.0 licensed."
+conditions="x402 tokens are issued on the Stellar public network with a fixed maximum supply of 6,000,000,000. The protocol is open and neutral — not tied to any specific network or entity. By holding or transacting x402, users accept that this token is a utility asset for the x402 protocol and carries no guarantee of value or returns."
+image="https://www.x402.org/images/x402_vector.svg"
+status="live"
+max_number=6000000000
+is_unlimited=false
+is_asset_anchored=false
+anchor_asset_type="other"
